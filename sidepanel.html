@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LostKit Lite - Side Panel</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Tools Panel -->
+        <div class="tools-panel" id="toolsPanel">
+            <div class="panel-header">
+                <span class="panel-title">LostKit Lite</span>
+            </div>
+            
+            <div class="panel-content" id="panelContent">
+                <!-- Settings Section -->
+                <div class="settings-group">
+                    <div class="group-title">Settings</div>
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="externalWindows" checked>
+                        <span class="checkmark"></span>
+                        <span class="checkbox-label">Open tools in new windows</span>
+                    </label>
+                </div>
+                
+                <!-- World Switcher Button -->
+                <button class="world-switcher-btn" id="worldSwitcherBtn">
+                    World Switcher
+                </button>
+                
+                <!-- IRC Chat Button -->
+                <button class="irc-toggle-btn" id="ircToggleBtn">
+                    IRC Chat
+                </button>
+                
+                <!-- Tools Section -->
+                <div class="tools-group">
+                    <div class="group-title">Tools</div>
+                    <div class="tools-scroll" id="toolsScroll">
+                        <button class="tool-btn" data-url="https://lostcity.rs" data-name="Forums">
+                            <img src="images/forums.png" alt="Forums" class="tool-icon">
+                            <span class="tool-text">Forums</span>
+                        </button>
+                        <button class="tool-btn" data-url="https://razgals.github.io/2004-Coordinates/" data-name="Clue Coordinates">
+                            <img src="images/coordinates.png" alt="Coordinates" class="tool-icon">
+                            <span class="tool-text">Coordinates</span>
+                        </button>
+                        <button class="tool-btn" data-url="https://razgals.github.io/Treasure/" data-name="Clue Scroll Help">
+                            <img src="images/cluehelp.png" alt="Clue Help" class="tool-icon">
+                            <span class="tool-text">Clue Help</span>
+                        </button>
+                        <button class="tool-btn" data-url="https://2004.lostcity.rs/worldmap" data-name="World Map">
+                            <img src="images/worldmap.png" alt="World Map" class="tool-icon">
+                            <span class="tool-text">World Map</span>
+                        </button>
+                        <button class="tool-btn" data-url="https://2004.lostcity.rs/hiscores" data-name="Highscores">
+                            <img src="images/highscores.png" alt="Highscores" class="tool-icon">
+                            <span class="tool-text">Highscores</span>
+                        </button>
+                        <button class="tool-btn" data-url="https://lostcity.markets" data-name="Market Prices">
+                            <img src="images/market.png" alt="Prices" class="tool-icon">
+                            <span class="tool-text">Prices</span>
+                        </button>
+                        <button class="tool-btn" data-url="https://2004.losthq.rs/?p=questguides" data-name="Quest Help">
+                            <img src="images/quests.png" alt="Quests" class="tool-icon">
+                            <span class="tool-text">Quests</span>
+                        </button>
+                        <button class="tool-btn" data-url="https://2004.losthq.rs/?p=skillguides" data-name="Skill Guides">
+                            <img src="images/skillsguides.png" alt="Skills" class="tool-icon">
+                            <span class="tool-text">Skills</span>
+                        </button>
+                        <button class="tool-btn" data-url="https://2004.losthq.rs/?p=calculators" data-name="Skills Calculator">
+                            <img src="images/skillscalculator.png" alt="Calculator" class="tool-icon">
+                            <span class="tool-text">Calculator</span>
+                        </button>
+                        <button class="tool-btn" data-url="https://2004.losthq.rs/?p=droptables" data-name="Bestiary">
+                            <img src="images/bestiary.png" alt="Bestiary" class="tool-icon">
+                            <span class="tool-text">Bestiary</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- World Switcher Panel -->
+        <div class="worlds-panel" id="worldsPanel" style="display: none;">
+            <div class="panel-header">
+                <button class="back-btn" id="backToToolsBtn">←</button>
+                <span class="panel-title">World Switcher</span>
+            </div>
+            
+            <div class="panel-content">
+                <!-- Controls Section -->
+                <div class="worlds-controls">
+                    <div class="detail-control">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="detailCheckbox" checked>
+                            <span class="checkmark"></span>
+                            <span class="checkbox-label">High Detail</span>
+                        </label>
+                    </div>
+                    <button class="refresh-btn" id="refreshWorldsBtn">Refresh</button>
+                </div>
+                
+                <!-- Worlds List -->
+                <div class="worlds-list-container">
+                    <div class="worlds-scroll">
+                        <div id="worldsList" class="worlds-list">
+                            <!-- World buttons will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="sidepanel.js"></script>
+</body>
+</html>
