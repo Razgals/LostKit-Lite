@@ -1,6 +1,6 @@
 # 🧙‍♂️ LostKit Lite
 
-**LostKit Lite** is a lightweight version of [LostKit](https://github.com/Razgals/LostKit), keeping all the essential features while being fully integrated into Google Chrome. It's fast, browser-friendly, and gives adventurers easy access to Lost City tools wherever they roam.
+**LostKit Lite** is a lightweight version of [LostKit](https://github.com/Razgals/LostKit), keeping all the essential features while being fully integrated into Google Chrome. It's fast, browser-friendly, and gives adventurers easy access to Lost City tools wherever they roam in a lightweight package.
 
 ## ✨ Features
 - **Separate Windows & Tabs:** Tools can open in their own windows or tabs within a browser - keep everything organized and accessible.  
@@ -19,7 +19,6 @@
 - **Skills Calculator:** Plan your skill progression ahead of time to reach your goals faster.  
 - **Bestiary:** Lists monsters and their drops - know what to expect before stepping into battle.  
 
-*LostKit Lite brings the magic and convenience of LostKit into a quick, lightweight browser package.*
 
 ## ⚡ Preview
 
