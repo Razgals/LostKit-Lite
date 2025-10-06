@@ -3,7 +3,7 @@
 **LostKit Lite** is a lightweight version of [LostKit](https://github.com/Razgals/LostKit), keeping all the essential features while being fully integrated into Google Chrome. It's fast, browser-friendly, and gives adventurers easy access to Lost City tools wherever they roam.
 
 ## ✨ Features
-- **Separate Windows & Tabs:** Tools can open in their own windows or tabs - keep everything organized and accessible.  
+- **Separate Windows & Tabs:** Tools can open in their own windows or tabs within a browser - keep everything organized and accessible.  
 - **IRC Chat:** Join chats with friends, find quest partners, or give your clan a private room for strategy and gossip.  
 - **World Switcher:** Jump between worlds effortlessly, no wasted time wandering.  
 
