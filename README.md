@@ -26,6 +26,3 @@
 
 <img width="1158" height="569" alt="image" src="https://github.com/user-attachments/assets/51bdf1fd-d7e7-4bbf-bb90-409b9354cf71" />
 
----
-
-**LostKit Lite** is a **LostHQ** creation — lightweight, practical, and made to bring the Lost City experience seamlessly into your browser.
