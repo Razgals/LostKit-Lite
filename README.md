@@ -29,4 +29,4 @@
 
 ---
 
-**LostKit Lite** is a **LostHQ** team creation — lightweight, practical, and designed to make Lost City feel alive again, right in your browser.
+**LostKit Lite** is a **LostHQ** creation — lightweight, practical, and made to bring the Lost City experience seamlessly into your browser.
