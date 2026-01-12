@@ -18,7 +18,7 @@
 - **Skill Guides:** Practical instructions to train any skill, from novice to master.  
 - **Skills Calculator:** Plan your skill progression ahead of time to reach your goals faster.  
 - **Bestiary:** Lists monsters and their drops - know what to expect before stepping into battle.  
-
+-- **Lost City Labs:** The supreme leviathan of overall Efficient Hours Played. 
 
 ## ⚡ Preview
 
