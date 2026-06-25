@@ -29,7 +29,7 @@ body {
 }
 
 /* Tools Panel */
-.tools-panel, .worlds-panel {
+.tools-panel, .worlds-panel, .hiscores-panel {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -422,4 +422,134 @@ body {
     font-size: 14px;
     font-weight: normal;
     color: #d5c6a0;
+}
+
+/* Highscores Panel Styles */
+.hiscores-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid #2a2a2a;
+    background-color: #000000;
+}
+
+.player-input {
+    flex: 1;
+    min-width: 0;
+    background-color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+    color: #f5e6c0;
+    padding: 8px 10px;
+    font-family: 'RuneScape', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.player-input::placeholder {
+    color: #9a8f70;
+}
+
+.player-input:focus {
+    outline: none;
+    border-color: #8b4a4a;
+}
+
+.hiscores-message {
+    text-align: center;
+    color: #d5c6a0;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.stats-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stat-row {
+    background: url('images/button.jpg') center center / cover;
+    border: 3px solid #2a2a2a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(139, 74, 74, 0.3);
+}
+
+.stat-row > * {
+    position: relative;
+    z-index: 1;
+}
+
+.stat-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+    min-width: 0;
+}
+
+.stat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.stat-name {
+    font-size: 17px;
+    font-weight: bold;
+    color: #f5e6c0;
+}
+
+.stat-level {
+    font-size: 16px;
+    color: #f5e6c0;
+    white-space: nowrap;
+}
+
+.stat-sub {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 13px;
+    color: #d5c6a0;
+}
+
+.progress-track {
+    height: 8px;
+    background-color: #2a2a2a;
+    border: 1px solid #1a1a1a;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+}
+
+.progress-label {
+    font-size: 12px;
+    color: #9fcf9f;
+    text-align: right;
 }

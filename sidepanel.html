@@ -29,7 +29,12 @@
                 <button class="world-switcher-btn" id="worldSwitcherBtn">
                     World Switcher
                 </button>
-                
+
+                <!-- Highscores Button -->
+                <button class="world-switcher-btn" id="hiscoresBtn">
+                    Highscores
+                </button>
+
                 <!-- IRC Chat Button -->
                 <button class="irc-toggle-btn" id="ircToggleBtn">
                     IRC Chat
@@ -47,17 +52,17 @@
                             <img src="images/coordinates.png" alt="Coordinates" class="tool-icon">
                             <span class="tool-text">Coordinates</span>
                         </button>
-                        <button class="tool-btn" data-url="https://razgals.github.io/Treasure-V2/" data-name="Clue Scroll Help">
+                        <button class="tool-btn" data-url="https://2004.losthq.rs/?p=clueguides" data-name="Clue Scroll Help">
                             <img src="images/cluehelp.png" alt="Clue Help" class="tool-icon">
                             <span class="tool-text">Clue Help</span>
                         </button>
-                        <button class="tool-btn" data-url="https://2004.lostcity.rs/worldmap" data-name="World Map">
+                        <button class="tool-btn" data-url="https://razgals.github.io/Clue-Puzzle-Solver-Standalone/" data-name="Puzzle Solver">
+                            <img src="images/puzzle.png" alt="Puzzle Solver" class="tool-icon">
+                            <span class="tool-text">Puzzle Solver</span>
+                        </button>
+                        <button class="tool-btn" data-url="https://tools.losthq.rs/map" data-name="World Map">
                             <img src="images/worldmap.png" alt="World Map" class="tool-icon">
                             <span class="tool-text">World Map</span>
-                        </button>
-                        <button class="tool-btn" data-url="https://2004.lostcity.rs/hiscores" data-name="Highscores">
-                            <img src="images/highscores.png" alt="Highscores" class="tool-icon">
-                            <span class="tool-text">Highscores</span>
                         </button>
                         <button class="tool-btn" data-url="https://lostcity.markets" data-name="Market Prices">
                             <img src="images/market.png" alt="Prices" class="tool-icon">
@@ -78,6 +83,10 @@
                         <button class="tool-btn" data-url="https://2004.losthq.rs/?p=droptables" data-name="Bestiary">
                             <img src="images/bestiary.png" alt="Bestiary" class="tool-icon">
                             <span class="tool-text">Bestiary</span>
+                        </button>
+                        <button class="tool-btn" data-url="https://2004.losthq.rs/?p=itemdb" data-name="Item Database">
+                            <img src="images/itemdb.png" alt="Item Database" class="tool-icon">
+                            <span class="tool-text">Item DB</span>
                         </button>
                         <button class="tool-btn" data-url="https://www.lostcitylabs.com" data-name="Lost City Labs">
                             <img src="images/lcl.png" alt="Lost City Labs" class="tool-icon">
@@ -113,6 +122,34 @@
                     <div class="worlds-scroll">
                         <div id="worldsList" class="worlds-list">
                             <!-- World buttons will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Highscores Panel -->
+        <div class="hiscores-panel" id="hiscoresPanel" style="display: none;">
+            <div class="panel-header">
+                <button class="back-btn" id="backFromHiscoresBtn">←</button>
+                <span class="panel-title">Highscores</span>
+            </div>
+
+            <div class="panel-content">
+                <!-- Search Section -->
+                <div class="hiscores-controls">
+                    <input type="text" id="playerName" class="player-input" placeholder="Player name" autocomplete="off">
+                    <button class="refresh-btn" id="lookupBtn">Lookup</button>
+                </div>
+
+                <div id="hiscoresLoading" class="hiscores-message" style="display: none;">Loading...</div>
+                <div id="hiscoresError" class="hiscores-message" style="display: none;">Player not found.</div>
+
+                <!-- Stats List -->
+                <div class="worlds-list-container">
+                    <div class="worlds-scroll">
+                        <div id="statsGrid" class="stats-grid">
+                            <!-- Stat rows added dynamically -->
                         </div>
                     </div>
                 </div>
